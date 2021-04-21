@@ -1,0 +1,116 @@
+.wrapper.wrapper-full-page {
+  height: auto;
+  min-height: 100vh;
+}
+
+.off-canvas-sidebar .wrapper-full-page .page-header {
+  padding: 15vh 0 !important;
+}
+
+.page-header,
+.page-header .page-header-image {
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.page-header {
+  align-items: center;
+}
+
+.header-filter .container {
+  z-index: 2;
+  position: relative;
+}
+
+.login-page .card-login,
+.register-page .card-signup {
+  transform: translateZ(0);
+}
+
+.login-page .card-login .card-header,
+.register-page .card-signup .card-header {
+  margin-top: -40px !important;
+  margin-bottom: 20px;
+}
+
+.login-page .card-login .card-title,
+.register-page .card-signup .card-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.login-page .card-login .card-body,
+.register-page .card-signup .card-body {
+  padding: 0 30px 0 10px;
+}
+
+.login-page .card-login .card-body .input-group .input-group-text,
+.register-page .card-signup .card-body .input-group .input-group-text {
+  padding: 15px 15px 0;
+}
+
+.login-page .card-login .card-body .input-group .form-control,
+.register-page .card-signup .card-body .input-group .form-control {
+  padding-bottom: 10px;
+  margin: 17px 0 0;
+}
+
+.header-filter {
+  background-size: cover;
+  background-position: top center;
+  background-blend-mode: saturation;
+}
+
+.login-page {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/md/img/login.jpg');
+}
+
+.register-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/md/img/register.jpg');
+}
+
+.header-filter::before {
+  background: rgba(0,0,0,.5);
+}
+
+.header-filter::after,
+.header-filter::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: '';
+}
+
+.bmd-form-group .error {
+  font-size: 0.8rem;
+  color: #f44336;
+  font-weight: 400;
+}
+
+.card-login .error,
+.card-signup .error,
+.card-login .form-check {
+  margin-left: 56px;
+}
+
+.card-login .form-check {
+  margin-top: 17px;
+  padding-top: 3px;
+}
+
+.alert {
+  font-weight: 400;
+}
+
+.register-page .card-signup {
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+  margin-top: 15vh;
+}

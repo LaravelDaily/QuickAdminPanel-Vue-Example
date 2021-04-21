@@ -1,0 +1,203 @@
+$brand-primary: #9c27b0;
+$bootstrap-blue: #2196f3;
+
+// Custom colors
+$color-azure: #2CA8FF;
+$color-green: #18ce0f;
+$color-orange: #f96332;
+$color-yellow: #FFB236;
+$color-purple: #9368E9;
+$color-rose: #e91e63;
+
+@import "material-dashboard";
+@import "vue-select";
+@import "datetimepicker";
+@import "dropzone";
+
+.has-items .bmd-label-floating {
+    top: -1rem;
+    left: 0;
+    font-size: 0.6875rem;
+}
+
+.required::after {
+    content: ' *';
+    color: $brand-danger;
+}
+
+// Datatables
+.-page-size-select {
+    display: inline-block;
+    width: 65px;
+}
+
+div[name="Datatable"] > div[name="SimpleTable"] {
+    overflow-x: scroll;
+}
+
+.table.table-bordered tbody tr {
+    position: static;
+}
+
+.card .table.table-bordered tr:first-child td {
+    border-top: 1px solid #ddd;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.table-overlay {
+  position: absolute !important;
+  top: 50;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+
+  .table-overlay-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  & span {
+    user-select: none;
+  }
+}
+
+.alert {
+  font-weight: 400;
+}
+
+.badge {
+    padding: 5px 12px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 11px;
+    color: #fff;
+    display: inline-block;
+    white-space: normal;
+}
+
+// Sidebar
+.sidebar .nav {
+    margin-top: 15px;
+    display: block;
+}
+
+.caret, .sidebar a {
+    transition: all .15s ease-in;
+}
+
+.sidebar .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.sidebar .nav .caret {
+    margin-top: 13px;
+    position: absolute;
+    right: 6px;
+}
+
+// Text and link colors
+.text-azure {
+    color: $color-azure !important;
+}
+.text-green {
+    color: $color-green !important;
+}
+.text-orange {
+    color: $color-orange !important;
+}
+.text-yellow {
+    color: $color-yellow !important;
+}
+.text-purple {
+    color: $color-purple !important;
+}
+.text-rose {
+    color: $color-rose !important;
+}
+
+a.text-azure:hover {
+    color: #008ef2 !important;
+}
+
+a.text-green:hover {
+    color: #13a60c !important;
+}
+
+a.text-orange:hover {
+    color: #eb3f06 !important;
+}
+
+a.text-yellow:hover {
+    color: #fa9a00 !important;
+}
+
+a.text-purple:hover {
+    color: #6b30e0 !important;
+}
+
+a.text-rose:hover {
+    color: #c2124e !important;
+}
+
+// Badges
+.badge-azure {
+    background-color: $color-azure;
+}
+
+.badge-green {
+    background-color: $color-green;
+}
+
+.badge-orange {
+    background-color: $color-orange;
+}
+
+.badge-yellow {
+    background-color: $color-yellow;
+}
+
+.badge-purple {
+    background-color: $color-purple;
+}
+
+.badge-rose {
+    background-color: $color-rose;
+}
+
+.badge-brand {
+    background-color: $brand-primary;
+}
+
+// CKEditor 5
+.ck-editor__editable_inline {
+    min-height: 150px;
+}
+
+.ck.ck-editor {
+    padding: 7px 0 !important;
+}
+
+// Dropzone
+@mixin bmd-raised-button-color() {
+  .btn-azure {
+    @include bmd-raised-button-variant($btn-primary-color, $color-azure, $color-azure);
+  }
+}
+
+@include bmd-raised-button-color();
